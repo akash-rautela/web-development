@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Q3 p9</title>
+        <style>
+            body{
+                background: linear-gradient(navy,blue);
+            }
+            #outer{
+                height: 500px;
+                width: 780px;
+                background: #10c5e2;
+                margin: 80px auto;
+                box-sizing: border-box;
+            }
+            #left{
+                height: 400px;
+                width: 340px;
+                margin-right: 10px;
+                margin-left: 10px;
+                float: left;
+                padding: 110px 30px;
+                box-sizing: border-box;
+            }
+            #right{
+                height: 400px;
+                width: 300px;
+                margin: 50px;
+                background: #e8fbff;
+                box-shadow: 4px 4px 15px 5px rgb(47, 47, 47);
+                border-radius: 10px;
+                float: left;
+                box-sizing: border-box;
+                padding: 30px;
+            }
+            .inp{
+                margin: 10px 0px;
+                border: none;
+                border-bottom: solid;
+                height: 30px;
+                width: 230px;
+                background-color: #e8fbff;
+                outline: none;
+                padding-bottom: 8px;
+            }
+            .btn{
+                margin-top: 50px;
+                height: 50px;
+                width: 230px;
+                background: linear-gradient(45deg,#0993b0,#07c8e0);
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outer">
+            <div id="left">
+                <p style="font-size: 16px; color: white; text-transform: uppercase; line-height: 20px; letter-spacing: 2px;">
+                    pure css animation<hr>
+                    <font style="font-size: 49px; color: white; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; text-transform: uppercase; letter-spacing: 2px; transform: scaleX(0.5);">form design</font><br>
+                    <font style="font-family: Arial, Helvetica, sans-serif; color: white; letter-spacing: 3px; text-transform: uppercase; font-size: 18px; margin-top: 10px;">input label animation</font>
+                </p>
+            </div>
+            <div id="right">
+                <form >
+                    <input class="inp" type="text" placeholder="Your Full Name">
+                    <br>
+                    <input class="inp" type="email" placeholder="Your Email Address">
+                    <br>
+                    <input class="inp" type="text" placeholder="Your Username">
+                    <br>
+                    <input class="inp" type="password" placeholder="Your Password">
+                    <br>
+                    <input class="btn"type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

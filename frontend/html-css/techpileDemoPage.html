@@ -1,0 +1,550 @@
+<html>
+    <head>
+        <title>Webpage</title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #outer{
+                min-height: 1500px;
+                width: 1200px;
+                border: 1px solid black;
+                margin: 0px auto;
+            }
+            #top{
+                height: 80px;
+                width: 1200px;
+                box-sizing: border-box;
+                padding: 0px 100px;
+            }
+            .t{
+                height: 80px;
+                width: 250px;
+                box-sizing: border-box;
+                padding-top: 22px;
+                float: left;
+                text-align: right;
+            }
+            #menu{
+                height: 45px;
+                width: 1200px;
+                box-sizing: border-box;
+                padding: 0px 200px;
+                background: black;
+                border: 1px solid white;
+            }
+            #slider{
+                height: 595px;
+                background: url("img/img2.jpg");
+                background-size: 100% 100%;
+                background-attachment: fixed;
+                animation-name: slider;
+                animation-duration: 9s;
+                animation-iteration-count: infinite;
+            }
+            #slider1{
+                height: 595px;
+                background: rgba(0,0,0,0.5);
+                color: white;
+                box-sizing: border-box;
+                padding: 0px 100px;
+            }
+            #sleft{
+                background-color: rgba(0, 0, 0, 0.2);
+                height: 495px;
+                width: 600px;
+                float: left;
+                margin: 50px 0px;
+                box-sizing: border-box;
+                padding: 100px 100px;
+                
+            }
+            #sright{
+                background-color: rgba(255, 255, 255, .2);
+                height: 445px;
+                width: 400px;
+                margin: 75px 0px;
+                float: left;
+                font-size: 16px;
+                border-radius: 5px;
+                box-sizing: border-box;
+                padding: 100px 50px;
+            }
+            #slider:hover{
+                animation-play-state: paused;
+            }
+            #menu ul{
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+            }
+            #menu ul li{
+                float: left;
+                width: 110px;
+                height: 45px;
+                line-height: 45px;
+                text-align: center;
+                color: white;
+                transition: 1s;
+            }
+            #menu ul li:hover{
+                background: orange;
+                transition: 1s;
+            }
+            @keyframes slider{
+                0%{
+                    background: url("img/img2.jpg");
+                    background-size: 100% 100%;
+                    background-attachment: fixed;
+                }
+                50%{
+                    background: url("img/img4.jpg");
+                    background-size: 100% 100%;
+                    background-attachment: fixed;
+                }
+                100%{
+                    background: url("img/img7.jpg");
+                    background-size: 100% 100%;
+                    background-attachment: fixed;
+                }
+            }
+            #services{
+                height: 200px;
+                width: 1200px;
+                padding: 0px 100px;
+                box-sizing: border-box;
+            }
+            .s{
+                height: 190px;
+                width: 240px;
+                float: left;
+                box-sizing: border-box;
+                margin: 5px;
+                box-shadow: 0px 0px 30px grey;
+                border-radius: 5px;
+                transform: translateY(-70px);
+                background: white;
+                padding: 20px;
+                text-align: justify;
+            }
+            .s:hover{
+                transform: scale(1.2,1.2);
+                transition: 1s;
+            }
+            #intro{
+                padding: 0px 100px;
+                width: 1200px;
+                height: 400px;
+                text-align: justify;
+                box-sizing: border-box;
+            }
+            #gallery{
+                height: 550px;
+                width: 1200px;
+                background-color: orange;
+                padding-top: 30px;
+                padding-bottom: 20px;
+                padding-left: 100px;
+                box-sizing: border-box;
+                font-weight: bold;
+            }
+            #contactus{
+                height: 700px;
+                width: 1200px;
+            }
+            #bfooter{
+                height: 50px;
+                width: 1200px;
+                border-top: 1px solid white;
+                background: black;
+                color: white;
+                box-sizing: border-box;
+                text-align: center;
+                font-size: 13px;
+                padding-top: 15px;
+            }
+            #formbox{
+                height: 609px;
+                width: 1200px;
+                box-sizing: border-box;
+                padding: 50px;
+            }
+            #fleft{
+                height: 500px;
+                width: 700px;
+                float: left;
+            }
+            #fright{
+                height: 500px;
+                width: 400px;
+                background-color: #f8f9fa;
+                float: left;
+                box-sizing: border-box;
+                padding: 40px;
+            }
+            .finput{
+                height: 35px;
+                width: 300px;
+                padding-left: 8px;
+            }
+            #form table{
+                border-spacing: 10px;
+            }
+            #btn{
+                border-radius: 5px; 
+                height: 40px; width: 150px; 
+                box-sizing: border-box; 
+                text-transform: uppercase; 
+                color: orangered; font-size: 12px; 
+                border: 1px solid orange; 
+                background: white; 
+                margin-top: 15px;
+                transition: 1s;
+                margin-left: 8px;
+            }
+            #btn:hover{
+                background: orangered;
+                color: white;
+                transition: 1s;
+            }
+            .anchor{
+                color: rgb(41, 41, 41);
+                text-decoration: none;
+                transition: 1s;
+            }
+            .anchor:hover{
+                transition: 1s;
+                color: orangered;
+                font-size: 15px;
+            }
+            .mail span a{
+                text-decoration: none;
+                transition: 1s;
+                color: rgb(41, 41, 41);
+            }
+            .mail span a:hover{
+                transition: 1s;
+                color: orangered;
+                font-size: 14px;
+            }
+            #n12:hover{
+                font-size: 14px;
+                transition: 1s;
+            }
+            .bfa{
+                color: orange;
+                text-decoration: none;
+            }
+            .bfa:hover{
+                transform: 0.3s;
+                color: white;
+                text-decoration: underline;
+            }
+            #ufooter{
+                height: 450px;
+                width: 1200px;
+                background-color: #2a2d2f;
+                box-sizing: border-box;
+                padding: 100px;
+            }
+            .ufl{
+                height: 300px;
+                width: 300px;
+                text-align: center;
+                float: left;
+            }
+            .ufr{
+                height: 300px;
+                width: 700px;
+                float: left;
+            }
+            .uf1,.uf2,.uf3{
+                float: left;
+                margin-left: 50px;
+                width: 100px;
+            }
+            .uf1 ul, .uf2 ul, .uf3 ul{
+                list-style: none;
+                color: #8e9091;
+                margin: 0;
+                padding: 0;
+            }
+            .uf1 ul li, .uf2 ul li{
+                margin-bottom: 20px;
+                font-size: 10px;
+            }
+            .uf3 ul li{
+                margin-top: 18px;
+                font-size: 10px;
+            }
+            .uf3 ul a,.uf1 ul a,.uf2 ul a{
+                text-decoration: none;
+                color: #8e9091;
+            }
+            .uf3 ul a:hover{
+                color: orangered;
+                text-decoration: underline;
+            }
+            .uf1 ul a:hover, .uf2 ul a:hover{
+                color: orange;
+                text-decoration: underline;
+            }
+            #slbtn{
+                margin-top: 50px;
+                margin-left: 100px;
+                height: 40px;
+                width: 200px;
+                border-radius: 10px;
+                background: rgba(255, 255, 255, 0.7);
+                transition: 1s;
+            }
+            #slbtn:hover, #srbtn:hover{
+                font-size: 16px;
+                transform: scale(1.2,1.2);
+                background: rgba(255, 0, 0, 0.6);
+                color: white;
+                transition: 1s;
+                box-shadow: 0px 0px 15px gray;
+            }
+            .srinp{
+                height: 30px;
+                margin-top: 20px;
+                width: 100%;
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                padding-left: 8px;
+                box-sizing: border-box;
+                border: none;
+                border-bottom: 2px solid red;
+                border-radius: 5px;
+                background: transparent;
+                color: aquamarine;
+            }
+            #srbtn{
+                margin-top: 50px;
+                margin-left: 50px;
+                height: 40px;
+                width: 200px;
+                border-radius: 10px;
+                background: rgba(255, 255, 255, 0.7);
+                transition: 1s;
+            }
+            .srinp::placeholder{
+                color: aquamarine;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outer">
+            <div id="top">
+                <div class="t">
+                    <img src="img/logo1.png" alt="" height="40px">
+                </div>
+                <div class="t">
+                    <b>Contact Us</b>
+                    <br>
+                    7007237006,9120936936
+                </div>
+                <div class="t">
+                    <b>Mail Us</b><br>
+                    <a href="mailto:techpilelko@gmail.com" style="color: black; text-decoration: none;">techpilelko@gmail.com</a>
+                </div>
+                <div class="t" style="padding-top: 30px;">
+                    <a href="#" style="background: orange; padding: 5px 10px; color: white; text-decoration: none; height: 40px; border-radius: 50px;">SIGN IN</a>
+                </div>
+            </div>
+            <div id="menu">
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About Us</li></a>
+                    <a href="#"><li>Register</li></a>
+                    <a href="#"><li>Contact Us</li></a>
+                    <a href="#"><li>Gallery</li></a>
+                    <a href="#"><li>Services</li></a>
+                    <a href="#"><li>Login</li></a>
+                </ul>
+            </div>
+            <div id="slider">
+                <div id="slider1">
+                    <div id="sleft">
+                        <p style="font-size: 30px; text-shadow: 2px 2px orange; text-align: center;">Welcome to Code Helper</p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis dolorem hic, iusto corporis minus ad labore fugiat sit tempore asperiores magnam cumque. Libero, veniam necessitatibus. Veritatis tempore totam ab placeat.
+                        <br>
+                        <a href="#" target="_blank"><input id="slbtn" type="submit" value="Sign up"></a>
+                    </div>
+                    <div id="sright">
+                        <p style="font-size: 30px; text-shadow: 2px 2px orange; text-align: center; margin-top: 0px;">Sign Up</p>
+                        <form style="text-align: left;">
+                            <input class="srinp" type="text" placeholder="Enter Your User Id"><br>
+                            <input class="srinp" type="password" placeholder="Enter Your password"><br>
+                            <input id="srbtn" type="submit" value="Login">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="services">
+                <div class="s">
+                    <b style="margin: 0px 40px;">Sample Text1</b> <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolorem maiores error, eius nue quod, accusamus temporibus eos, voluptas itaque architecto. aliquam voluptas?
+                </div>
+                <div class="s">
+                    <b style="margin: 0px 40px;">Sample Text2</b> <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolorem maiores error, eius nue quod, accusamus temporibus eos, voluptas itaque architecto. aliquam voluptas?
+                </div>
+                <div class="s">
+                    <b style="margin: 0px 40px;">Sample Text3</b> <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolorem maiores error, eius nue quod, accusamus temporibus eos, voluptas itaque architecto. aliquam voluptas?
+                </div>
+                <div class="s">
+                    <b style="margin: 0px 40px;">Sample Text4</b> <br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At dolorem maiores error, eius nue quod, accusamus temporibus eos, voluptas itaque architecto. aliquam voluptas?
+                </div>
+            </div>
+            <div id="intro">
+                <div style="text-align: center; font-size: 30px;">About <b style="color: orange;">Us</b></div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis rem in cumque dignissimos rerum ab nemo odit, aliquam non iure voluptate quam possimus soluta perferendis ipsam quasi tempora sapiente fugiat?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis rem in cumque dignissimos rerum ab nemo odit, aliquam non iure voluptate quam possimus soluta perferendis ipsam quasi tempora sapiente fugiat?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis rem in cumque dignissimos rerum ab nemo odit, aliquam non iure voluptate quam possimus soluta perferendis ipsam quasi tempora sapiente fugiat?
+            </div>
+            <div id="Gallery">
+                <div style="text-align: center; font-size: 30px;">Image <b style="color: orangered;">Gallery</b></div>
+                <img src="img/img1.jpg" alt="" height="200px" width="300px" style="margin-left: 30px; margin-top: 15px;">
+                <img src="img/img2.jpg" alt="" height="200px" width="300px" style="margin-left: 30px; margin-top: 15px;">
+                <img src="img/img3.jpg" alt="" height="200px" width="300px" style="margin-left: 30px; margin-top: 15px;">
+                <img src="img/img4.jpg" alt="" height="200px" width="300px" style="margin-left: 30px; margin-top: 15px;">
+                <img src="img/img5.jpg" alt="" height="200px" width="300px" style="margin-left: 30px; margin-top: 15px;">
+                <img src="img/img7.jpg" alt="" height="200px" width="300px" style="margin-left: 30px; margin-top: 15px;">
+            </div>
+            <div id="contactus">
+                <div style="text-align: center; font-size: 30px;"><b style="color:orange">Contact</b> With Us</div>
+                <hr style="width: 100px; background-color: orange;  height: 2px; border: none; margin-top: 2px;">
+                <p style="font-size: 14px; color: gray; margin: 10px 300px; text-align: center;">You may contact us by contact number or fill this form any time you need professional support or have any question.</p>
+                <div id="formbox">
+                    <div id="fleft">
+                        <form id="form">
+                            <div style="margin: 10px 0px; font-size: 18px;">Send Your Message</div>
+                            <div style="width: 50px; margin-bottom: 25px;"><hr style="background-color: orange; height: 2px; border: none;"></div>
+                            <table>
+                                <tr>
+                                    <td>Your Name:</td>
+                                    <td><div style="margin-left: 15px;">Your Contact:</div><td>
+                                </tr>
+                                <tr>
+                                    <td> <input class="finput" type="text" placeholder="Enter Your Name*"></td>
+                                    <td><input class="finput" type="number" placeholder="Enter Your Contact Number*" style="margin-left: 15px;"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Your Email: </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><input type="email" placeholder="Enter Your Email*" style="width: 622px; height: 30px;
+                                    padding-left: 8px;"></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">Enter Your Message:</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2"><textarea placeholder="Type Your Message Here*" style="height: 150px;
+                                    width: 622px; padding-left: 8px;"></textarea></td>
+                                </tr>
+                            </table>
+                            <input type="submit" value="Send Message" id="btn">
+                        </form>
+                    </div>
+                    <div id="fright">
+                        <div style="font-size: 20px;">Contact Info</div>
+                        <div style="width: 50px; margin-bottom: 25px;"><hr style="background-color: orange; height: 2px; border: none;"></div>
+                        <div>
+                            <div style="float: left; width: 40px;">
+                                <img src="img/location.png" alt="" height="20px">
+                            </div>
+                            <div style="float: left; margin-left: 5px; width: 250px; font-size: 13px; line-height: 20px;">
+                                <span style="color: orangered; font-size: 18px; margin-bottom: 5px;">Office Address</span>
+                                <div style="width: 50px;;"><hr style="background-color: orange; height: 2px; border: none;"></div>
+                                <span style="margin-top: 2px; color: rgb(48, 48, 48);">Plot No-43, Behind H.P Petrol Pump,Tedhi Pulia Ring Rd, Sector 5,Vikas Nagar, Lucknow Uttar Pradesh 226022</span>
+                            </div>
+                        </div><br>
+                        <div style="margin-top: 10px;">
+                            <div style="float: left; width: 40px;">
+                                <img src="img/call.png" alt="" height="20px" style="transform: rotate(180deg);">
+                            </div>
+                            <div style="float: left; margin-left: 5px; width: 260px; font-size: 13px; line-height: 20px;">
+                                <span style="color: orangered; font-size: 18px; margin-bottom: 5px;">Call Us</span>
+                                <div style="width: 50px;;"><hr style="background-color: orange; height: 2px; border: none;"></div>
+                                <span style="margin-top: 2px; color: rgb(48, 48, 48);">
+                                    <span style="color:rgb(82, 80, 80); font-size: 16px; font-weight: 600;">For CS/IT </span>
+                                    <br>
+                                    <a class="anchor" href="tel:+91 9140444301">+91 9140444301</a>,
+                                    <a class="anchor" href="tel:+91 7007237006">+91 7007237006</a>, 
+                                    <br><br>
+                                    <a class="anchor" href="tel:+91 7348481001">+91 7348481001</a>, 
+                                    <a class="anchor" href="tel:+91 7348481004,">+91 7348481004,</a>
+                                    <br><br>
+                                    <span style="color:rgb(82, 80, 80); font-size: 16px; font-weight: 600;">For ELX/Civill</span> 
+                                    <br><a class="anchor" href="tel:+91 7348481002">+91 7348481002</a><br> 
+                                    <a class="anchor" href="tel:+91 7348481003 ">+91 7348481003 </a><br>
+                                </span><br>
+                            </div>
+                        </div>
+                        <div class="mail" style="margin-top: 10px;">
+                            <div style="float: left; width: 40px;">
+                                <img src="img/mail.png" alt="" height="20px">
+                            </div>
+                            <div style="float: left; margin-left: 5px; width: 250px; font-size: 13px; line-height: 20px;">
+                                <span style="color: orangered; font-size: 18px; margin-bottom: 5px;">Mail Us</span>
+                                <div style="width: 50px;;"><hr style="background-color: orange; height: 2px; border: none;"></div>
+                                <span style="margin-top: 2px; color: rgb(48, 48, 48);">
+                                    <a href="mailto:techpilelko@gmail.com" ><font id="n12">techpilelko@gmail.com</font></a>
+                                    <br>
+                                    <a href="mailto:hr@techpile.in">hr@techpile.in</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="ufooter">
+                <div class="ufl"><img src="img/Screenshot 2025-06-27 230731.png" alt="" height="300px"></div>
+                <div class="ufr">
+                    <div class="uf1">
+                        <div style="font-size: 16px; font-weight: 600; color: white;">Useful Links</div>
+                        <ul>
+                            <li></li>
+                            <a href="#"><li>&gt; Home</li></a>
+                            <a href="#"><li>&gt; About Us</li></a>
+                            <a href="#"><li>&gt; Placement</li></a>
+                            <a href="#"><li>&gt; contact-us</li></a>
+                            <a href="#"><li>&gt; Our Team </li></a>
+                            <a href="#"><li>&gt; Terms&Condition</li></a>
+                        </ul>
+                    </div>
+                    <div class="uf2">
+                        <ul>
+                            <li style="margin-top: 42px;"></li>
+                            <a href="#"><li>&gt; Online Registration</li></a>
+                            <a href="#"><li>&gt; Our Courses</li></a>
+                            <a href="#"><li>&gt; Feedback</li></a>
+                            <a href="#"><li>&gt; Privacy ans Policy</li></a>
+                            <a href="#"><li>&gt; Our Recruiters </li></a>
+                            <a href="#"><li>&gt; Refund Policy</li></a>
+                        </ul>
+                    </div>
+                    <div class="uf3" style="width: 150px;">
+                        <div style="font-size: 16px; font-weight: 600; color: white;">Contact Address</div>
+                        <ul>
+                            <li>Plot No-43, Behind H.P Petrol Pump, Tedhi Pulia Ring Rd, Sector 5, Vikas Nagar, Lucknow, Uttar Pradesh 226022</li>
+                            <a href="tel:+91-7007237006"><li>+91-7007237006</li></a>
+                            <a href="tel:+91-9140444301"><li>+91-9140444301</li></a>
+                            <a href="mailto:techpilelko@gmail.com"><li>techpilelko@gmail.com</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="bfooter">
+                &copy; 2024 <a class="bfa" href="https://www.techpile.in/">Techpile Technology</a> 2024 | Developed by 
+                <a class="bfa" href="https://www.techpile.in/contact-us/#">Techpile-Technical Cell</a>
+            </div>
+        </div>
+    </body>
+</html>

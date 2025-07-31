@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>Nuno Website</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            #outer{
+                height: 730px;
+                width: 1521px;
+                background: black;
+            }
+            #top{
+                height: 55px;
+                width: 100%;
+            }
+            #tleft{
+                height: 60px;
+                width: 50%;
+                float: left;
+                height: 100%;
+                font-size: 28px;
+                padding-left: 30px;
+                box-sizing: border-box;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #tlogo, #tname{
+                float: left;
+                line-height: 60px;
+                text-transform: uppercase;
+            }
+            #tright{
+                width: 50%;
+                float: left;
+                height: 100%;
+            }
+            #tright ul{
+                list-style: none;
+                margin: 0px;
+            }
+            #tright ul li{
+                float: left;
+                height: 100%;
+                width: 15%;
+                margin-left: 8px;
+                text-align: center;
+                line-height: 50px;
+                color: white;
+            }
+            #tright ul li:hover{
+                color: green;
+            }
+            #bottom{
+                height: 700px;
+                background: url('img/nuno.jpeg');
+                background-size: 100% 100%;
+                box-sizing: border-box;
+                padding: 100px;
+                box-shadow: -300px 0px 500px rgba(0, 0, 0, 0.767) inset, 50px 0px 500px rgba(255, 254, 254, 0.21) inset;
+                backdrop-filter: grayscale(100%);
+            }
+            
+            #bdata{
+                height: 400px;
+                width: 800px;
+                text-transform: uppercase;
+                text-align: center;
+                box-sizing: border-box;
+                margin: 140px auto;
+            }
+            #btop{
+                font-weight: bold;
+                font-size: 50px;
+                height: 100px;
+                margin-top: 100px;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                letter-spacing: 4px;
+                line-height: 100px;
+            }
+            #bmid{
+                color: white;
+                font-size: 30px;
+            }
+
+            #bbottom{
+                margin-top: 30px;
+            }
+            #bbottom button{
+                height: 30px;
+                width: 140px;
+                color: white;
+                font-size: 12px;
+                text-transform: uppercase;
+                background: none;
+                border: 1px solid white;
+                transition: 1s;
+            }
+
+            #bbottom button:hover{
+                transform: scale(1.1,1.1);
+                transition: 1s;
+                backdrop-filter: blur(5px);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outer">
+            <div id="top">
+                <div id="tleft"> 
+                    <div id="tlogo"><img src="img/n-logo.jpeg" height="100%" width="50px" alt=""> </div>
+                    <div id="tname">Nuno</div>
+                </div>
+                <div id="tright">
+                    <ul>
+                        <a href="#"><li>HOME</li></a>
+                        <a href="#"><li>COURSE</li></a>
+                        <a href="#"><li>FEATURES</li></a>
+                        <a href="#"><li>RESOURCES</li></a>
+                        <a href="#"><li>CLIENTS</li></a>
+                        <a href="#"><li>CONTACT</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div id="bottom">
+                <div id="bdata">
+                    <div id="btop">Welcome to nuno</div>
+                    <div id="bmid">Udemy Bootstrap 4 course</div>
+                    <div id="bbottom">
+                        <a href="#" target="_blank"><button>Get Started</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <title>Prixima</title>
+        <style>
+            body{
+                margin: 0;
+                padding: 0;
+            }
+            #outer{
+                height: 700px;
+                width: 1521px;
+                background: black;
+            }
+            #top{
+                height: 40px;
+                width: 1521px;
+                background: linear-gradient(to right,rgb(255, 17, 0),orangered);
+                padding: 2px 10px;
+                box-sizing: border-box;
+            }
+            #tleft{
+                height: 100%;
+                width: 50%;
+                float: left;
+                padding-top: 7px;
+                padding-left: 140px;
+                box-sizing: border-box;
+            }
+            #tleft a{
+                color: white;
+                text-decoration: none;
+                margin-right: 15px;
+            }
+            #tright{
+                height: 100%;
+                width: 50%;
+                float: left;
+                padding: 4px;
+                box-sizing: border-box;
+            }
+            .image{
+                height: 20px;
+                width: 20px;
+                margin-top: 5px;
+                background: rgba(94, 93, 93, 0.342);
+                border-radius: 50%;
+                border: 1px solid rgba(94, 92, 92, 0.639);
+                background-size: 100% 100%;
+            }
+            #mid{
+                height: 60px;
+                width: 1521px;
+                background: rgb(221, 219, 219);
+            }
+            
+            #mleft{
+                height: 60px;
+                width: 50%;
+                float: left;
+                font-weight: bolder;
+                font-size: 30px;
+                line-height: 60px;
+                padding-left: 150px;
+                box-sizing: border-box;
+                color: black;
+            }
+            #mright{
+                height: 60px;
+                width: 50%;
+                float: left;
+                padding: 10px;
+                box-sizing: border-box;
+            }
+            #mright ul{
+                list-style: none;
+                padding: 0px;
+                margin: 0px;
+            }
+            #mright ul li{
+                float: left;
+                color: black;
+                margin: 0px 6px;
+                font-weight: 600;
+                height: 40px;
+                width: 80px;
+                text-align: center;
+                line-height: 40px;
+            }
+            #mright ul li:hover{
+                background: orangered;
+                color: white;
+            }
+            #bottom{
+                height: 650px;
+                width: 100%;
+                background: url("img/prixima.jpeg");
+                background-size: 100% 100%;
+                box-shadow: 400px 0px 2000px rgba(1, 1, 82, 0.322) inset,  -200px 0px 2000px rgba(255, 255, 255, 0.263) inset;
+            }
+            .arrow{
+                float: left;
+                height: 40px;
+                width: 40px;
+                color: white;
+                line-height: 40px;
+                text-align: center;
+                background: rgba(128, 128, 128, 0.333);
+                border-radius: 50%;
+                transform: translateY(300px);
+                margin-left: 10px;
+            }
+            .arrow a{
+                color: white;
+                text-decoration: none;
+            }
+            #bmid{
+                height: 650px;
+                width: 1410px;
+                float: left;
+                box-sizing: border-box;
+                padding: 150px 100px;
+            }
+            #bfirst{
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+            }
+            #bheading{
+                color: white;
+                font-weight: bolder;
+                font-family: Helvetica;
+                font-size: 100px;
+
+            }
+            #mright ul #l
+            {
+            color:orange;
+            }
+             #mright ul #l:hover
+            {
+            color:white;
+            }
+            #blast{
+                margin-top: 10px;
+                height: 200px;
+                width: 100%;
+            }
+            #blast button{
+                color: white;
+                text-decoration: none;
+                margin-left: 5px;
+                height: 40px;
+                width: 185px;
+                text-transform: uppercase;
+                border: 1px solid white;
+                background: none;
+                backdrop-filter: blur();
+            }
+            #blast button:hover{
+                background: rgb(255, 55, 0);
+                border: 1px solid orange;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outer">
+            <div id="top">
+                <div id="tleft">
+                    <a href="mailto:info@theme.com">info@theme.com</a>
+                    <a href="tel:+12345648790">info@theme.com</a>
+                </div>
+                <div id="tright">
+                    <img class="image" src="img/f.png" alt="" style="margin-left: 74%;">
+                    <img class="image" src="img/in.png" alt="">
+                    <img class="image" src="img/twitter.png" alt="">
+                    <img class="image" src="img/facebook.png" alt="">
+                </div>
+            </div>
+            <div id="mid">
+                <div id="mleft">Prixima.</div>
+                <div id="mright">
+                    <ul>
+                        <a href="#" id="home"><li id="l">Home</li></a>
+                        <a href="#"><li>Services</li></a>
+                        <a href="#"><li>Portfolio</li></a>
+                        <a href="#"><li>Team</li></a>
+                        <a href="#"><li>Blog</li></a>
+                        <a href="#"><li>Content</li></a>
+                        <a href="#"><li>Join us</li></a>
+                    </ul>
+                </div>
+            </div>
+            <div id="bottom">
+                <div class="arrow"><a href="#">prev</a></div>
+                <div id="bmid">
+                    <div id="bfirst">We craft digital Experiences</div>
+                    <div id="bheading">Design driven for Professionals</div>
+                    <div id="blast">
+                        <a href="#" target="_blank"><button >Get Started</button></a>
+                        <a href="#" target="_blank"><button href="#">Our Work</button></a>
+                    </div>
+                </div>
+                <div class="arrow"><a href="#">next</a></div>
+            </div>
+        </div>
+    </body>
+</html>

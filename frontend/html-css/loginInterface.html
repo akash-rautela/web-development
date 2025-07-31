@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>Question 1 part 9</title>
+        <style>
+            #outer{
+                height: 500px;
+                width: 900px;
+                background: linear-gradient(black,gray);
+                margin: 50px auto;
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+            }
+            #left{
+                height: 500px;
+                width: 450px;
+                background-color: #c7c3c2;
+                float: left;
+                box-sizing: border-box;
+                padding-top: 50px;
+                font-size: 30px;
+            }
+            #left p{
+                font-size: 15px;
+                color: rgb(53, 52, 52);
+            }
+            .input{
+                width: 70%;
+                height: 40px;
+                margin: 15px;
+                border-radius: 15px;
+                border: none;
+                box-sizing: border-box;
+                padding-left: 10px;
+                background-color: #c7c3c2;
+                color: black;
+                font-weight: bold;
+                box-shadow:0px 0px 2px rgb(66, 63, 63) inset, 4px 4px 5px 0px rgb(66, 63, 63) inset, -2px -2px 5px 0px white inset;
+            }
+            .signin{
+                height: 30px;
+                width: 80px;
+                border: none;
+                border-radius: 25px;
+                box-sizing: border-box;
+                padding-left: 10px;
+                background-color: #c7c3c2;
+                color: black;
+                box-shadow: 3px 3px 5px 0px rgb(66, 63, 63),-2px -2px 5px 0px white, -4px -4px 10px 0px white;
+            }
+            .signin:hover{
+                transform: scaleX(1.2);
+                box-shadow: 0px 0px 10px #00ffff, 0px 0px 20px #00ffff;
+                transition: 1s;
+            }
+            .image{
+                border-radius: 50%;
+                box-shadow: 3px 1px 5px 0px rgb(66, 63, 63), -2px -2px 5px 0px white;
+                background-color: #c7c3c2;
+                margin-right: 30px;
+            }
+            #right{
+                height: 500px;
+                width: 450px;
+                background-color: #ff4500;
+                float: left;
+                padding: 120px;
+                box-sizing: border-box;
+            }
+            .greet{
+                margin-top: 50px;
+                height: 50px;
+                width: 100%;
+                font-size: 30px;
+                color: white;
+            }
+            #right p{
+                font-size: 15px;
+                color: white;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="outer">
+            <div id="left">
+                <h3>Sign In</h3>
+                <div>
+                    <img class="image" src="img/f.png" alt=""  height="25px" width="25px">
+                    <img class="image" src="img/twitter.png" alt="" height="25px" width="25px">
+                    <img src="img/in.png" alt="" class="image" height="25px" width="25px">
+                    <span class="image2"></span>
+                </div>
+                <p>or use your account</p>
+                <form>
+                    <input class="input" type="email" placeholder="Email">
+                    <br>
+                    <input class="input" type="password" placeholder="Password">
+                    <br>
+                    <br>
+                    <input class="signin" type="submit" value="Sign In">
+                </form>
+            </div>
+            <div id="right">
+                <div class="greet">Hello, Friend</div>
+                <p>Enter your personal details and start your journey with us.</p>
+                <br><br>
+                <input class="signin" type="submit" value="Sign In" style="background-color: #ff4500;">
+            </div>
+        </div>
+    </body>
+</html>
