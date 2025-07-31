@@ -1,0 +1,334 @@
+<html>
+  <head>
+    <title>bootstrap day 3</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <script src="js/bootstrap.bundle.js"></script>
+    <style>
+      .image {
+        height: 600px;
+      }
+      .imgau {
+        height: 320px;
+      }
+      .bimage{
+        height: 350px;
+        width: 100%;
+      }
+      .oimage{
+        height: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="min-height: 400px">
+      <div class="row" style="min-height: 70px">
+        <div class="col-sm-12">
+          <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="demo13.html">Our Portfolio</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active text-center"
+                      aria-current="page"
+                      href="demo13.html"
+                      ><i class="fa-solid fa-house"></i>home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../HTML/demo69.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Our Skills</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Our Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Our Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop"
+                      >Registration</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Training
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Offline Training</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Online Training</a>
+                      </li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Free Training</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"
+                      >Disabled</a
+                    >
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row" style="min-height: 400px">
+        <div class="col-sm-12">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="100">
+                <img
+                  src="images/img10.jpg"
+                  class="d-block w-100 image img-fluid"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="100">
+                <img
+                  src="images/img4.jpg"
+                  class="d-block w-100 image img-fluid"
+                  alt="..."
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="100">
+                <img
+                  src="images/img5.jpg"
+                  class="d-block w-100 image img-fluid"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="min-height: 100px">
+        <div class="text-center mt-3 h1">
+          About <b class="text-danger">Us</b>
+        </div>
+        <div class="col-sm-6">
+          <img src="images/img1.jpg" class="img-thumbnail imgau" alt="" />
+        </div>
+        <div class="col-sm-6 p-3 fs-2 text-success">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+          voluptas ad quis delectus distinctio, porro, laboriosam harum magni
+          repudiandae libero voluptatum iusto, in omnis voluptatibus repellat
+          doloremque obcaecati eum aliquam!
+        </div>
+      </div>
+      <div class="row" style="min-height: 400px">
+        <div class="text-center mt-3 h1">
+          Our <b class="text-danger">Services</b>
+        </div>
+        <div class="col-sm-4">
+          <div class="card mx-auto my-3 shadow-lg" style="width: 18rem">
+            <img src="images/img4.jpg" class="oimage card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center">Title 1</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-outline-primary ms-5">Know More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card mx-auto my-3 shadow-lg" style="width: 18rem">
+            <img src="images/img3.jpg" class="oimage card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center">Title 2</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-outline-success ms-5">Know More...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card mx-auto my-3 shadow-lg" style="width: 18rem">
+            <img src="images/img5.jpg" class="oimage card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title text-center">Title 3</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-outline-danger ms-5">Know More...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row bg-dark" style="min-height: 500px">
+        <div class="h1 text-danger text-center mt-2">Image Gallery</div>
+        <div class="container mt-3" style="min-height: 800px;">
+            <div class="row mt-2" style="min-height: 350px;">
+                <div class="col-sm-4"><img src="images/img1.jpg" class="bimage img-thumbnail mx-auto shadow-lg" alt=""></div>
+                <div class="col-sm-4"><img src="images/img2.jpg" class="bimage img-thumbnail mx-auto" alt=""></div>
+                <div class="col-sm-4"><img src="images/img3.jpg" class="bimage img-thumbnail mx-auto" alt=""></div>
+            </div>
+            <div class="row mt-2" style="min-height: 350px;">
+                <div class="col-sm-4"><img src="images/img4.jpg" class="bimage img-thumbnail mx-auto" alt=""></div>
+                <div class="col-sm-4"><img src="images/img5.jpg" class="bimage img-thumbnail mx-auto" alt=""></div>
+                <div class="col-sm-4"><img src="images/img7.jpg" class="bimage img-thumbnail mx-auto" alt=""></div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              Registration form
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="input-group flex-nowrap shadow-lg">
+              <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-user"></i></span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter your name"
+                aria-label="Username"
+                aria-describedby="addon-wrapping"
+              />
+            </div>
+            <div class="mt-2 input-group flex-nowrap shadow-lg">
+              <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-envelope"></i></span>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter your email id"
+                aria-label="Password"
+                aria-describedby="addon-wrapping"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-primary">Register Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
