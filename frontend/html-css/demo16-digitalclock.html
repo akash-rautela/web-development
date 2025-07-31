@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Digital Clock</title>
+        <link href="https://fonts.cdnfonts.com/css/digital-7-mono" rel="stylesheet">
+        <style>
+            body{
+                background: black;
+            }
+            #box{
+                min-height: 350px;
+                width: 1500px;
+                margin: 100px auto;
+                background: black;
+                border: 10px solid red;
+                border-radius: 10px;
+                background: white;
+                box-shadow: 0px 0px 20px 10px black inset;
+                font-size: 200px;
+                text-align: center;
+                line-height: 350px;
+                color: red;
+                font-family: Digital-7;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box">Time</div>
+        <script>
+            function clock(){
+                var boxRef = document.querySelector("#box");
+                var d = new Date();
+                console.log(d);
+                
+                var finalTime = d.toLocaleTimeString(); //we are using this to extract the time from the day.
+                boxRef.innerHTML = finalTime;
+            }
+            //setInterval(function name, time interval in mili-seconds)
+            setInterval(clock, 1000);
+        </script>
+    </body>
+</html>
